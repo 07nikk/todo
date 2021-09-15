@@ -20,6 +20,10 @@ createList = ()=>{
 	inp.value="";
 }
 
+removeList =()=>{
+	ul.innerHTML="";
+}
+
 function logKey(event){
 
 		//console.log(event.charCode);
@@ -39,7 +43,19 @@ addListAfterClick = ()=>{
 	}
 }
 
+removeListAfterClick= ()=>{
+	removeList();
+}
+
+removeElement = (e)=>{
+	if(e.target.tagName ==="LI");
+	{
+		e.target.classList.toggle("done");
+	}
+}
+
 inp.addEventListener("keypress",logKey);
 
 addItems.addEventListener("click", addListAfterClick);
-// rmItems.addEventListener("click", removeListAfterClick);
+rmItems.addEventListener("click", removeListAfterClick);
+ul.addEventListener("click", removeElement);
