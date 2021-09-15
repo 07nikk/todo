@@ -3,7 +3,8 @@
 
 This is a simple todo list utility.
 
-Files:
+    Files:
+    
     i.      node_modules 		: Node dependencies, you have to install npm
     ii. 	package-lock.json 	: To run it on live server
     iii. 	README.md 		  	: self explanatory
